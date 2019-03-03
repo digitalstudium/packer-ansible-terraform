@@ -1,13 +1,13 @@
 # packer-ansible-terraform
 This projects is an example of creating image of cloud server on scaleway.io provider with packer and ansible, and creating cloud server from this image with terraform 
 
-## Prerequisites
-----------------
+Prerequisites
+-------------
 
 packer, ansible and terraform installed
 
-##Deployment
------------
+Deployment
+----------
 
 ### 1.
 First of all, create environment variables with API keys for packer and terraform:
@@ -44,19 +44,20 @@ cd ../../terraform/centos-docker-and-compose/
 terraform init
 terraform plan
 terraform apply
+```
 
-##Troubleshooting
----------------
+Troubleshooting
+-------
 
 You could create an issue for this repository
 
 
-##License
+License
 -------
 
 GPLv3
 
-##Author Information
+Author Information
 ------------------
 
 Costel Shootkin, costel@digitalstudium.com
