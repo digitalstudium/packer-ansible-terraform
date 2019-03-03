@@ -1,0 +1,2 @@
+- src: https://github.com/digitalstudium/docker-ansible-role.git
+  scm: git
