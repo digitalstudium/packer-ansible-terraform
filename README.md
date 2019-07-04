@@ -1,5 +1,5 @@
 # packer-ansible-terraform
-This projects is an example of creating image of cloud server on scaleway.io provider with packer and ansible, and creating cloud server from this image with terraform 
+This project is an example of creating image of cloud server on scaleway.io provider with packer and ansible, and creating cloud server from this image with terraform 
 
 Prerequisites
 -------------
