@@ -1,0 +1,28 @@
+{
+  "variables": {
+    "organization_id": "",
+    "api_token": ""
+  },
+  "builders": [
+    {
+      "organization_id": "{{ user `organization_id` }}",
+      "api_token": "{{ user `api_token` }}",
+      "server_name": "kuber",
+      "image_name": "centos-kuber",
+      "snapshot_name": "centos-snapshot-kuber",
+      "type": "scaleway",
+      "image": "0f44b130-2bc7-4f82-993e-de9d1042c56e",
+      "region": "par1",
+      "commercial_type": "START1-S",
+      "ssh_private_key_file": "~/.ssh/id_rsa",
+      "ssh_username": "root"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "ansible",
+      "playbook_file": "../../ansible/playbooks/docker-and-compose/playbook.yml",
+      "groups": "scaleway"
+    }
+  ]
+}

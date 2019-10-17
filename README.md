@@ -13,11 +13,12 @@ Deployment
 First of all, create environment variables with API keys for packer and terraform:
 ```bash
 # for packer
-export SCALEWAY_API_ACCESS_KEY=<your organization id>
+export SCALEWAY_ORGANIZATION=<your organization id>
 export SCALEWAY_API_TOKEN=<your scaleway api token>
 # for terraform
-export SCALEWAY_ORGANIZATION=<your organization id>
-export SCALEWAY_TOKEN=<your scaleway api token>
+export SCW_DEFAULT_ORGANIZATION_ID=<your organization id>
+export SCW_ACCESS_KEY=<your scaleway api token>
+export SCW_SECRET_KEY=<your scaleway secret key>
 ```
 ### 2.
 Then run commands:
